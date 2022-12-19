@@ -1,0 +1,144 @@
+{
+  "main": {
+    "id": "9f910ac485cba17d",
+    "type": "split",
+    "children": [
+      {
+        "id": "2b8759cf3a878f0c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8e5401e6e05f58d4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "NoteJS.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "908dd9939605ccb2",
+    "type": "split",
+    "children": [
+      {
+        "id": "36b60a93862e2280",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6c5bf61446fa15b7",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "873fac68f4b7274c",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "3327cc8061776dcc",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "6d98935ba7b18dca",
+    "type": "split",
+    "children": [
+      {
+        "id": "64a08ca3639504cb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "25f41d7b50ad9968",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "NoteJS.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "034e50c18524c5ba",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "NoteJS.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "e03a1ab777616a47",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "643fd95396096569",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "NoteJS.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "8e5401e6e05f58d4",
+  "lastOpenFiles": [
+    "Autre.md",
+    "NoteJS.md"
+  ]
+}
