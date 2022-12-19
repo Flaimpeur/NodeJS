@@ -63,17 +63,13 @@ function NumberToLetter(nombre, U=null, D=null) {
     // Utilisation de la fonction parseFloat qui permet de transformer une chaîne de caractère en un nombre
     num = parseFloat(nombre.toString().replace(/ /gi, ""));
 
-    if(Math.ceil(num) != num){
-        num = nombre.toString().split('.');
-        //return NumberToLetter(num[0]) + " virgule " + NumberToLetter(num[1]);
-        return NumberToLetter(num[0]) + (U ? " " + U + " et " : " virgule ") + NumberToLetter(num[1]) + (D ? " " + D : "");
-    }
-
     x = num.toString().length;
     switch (x) {
+
         case 1:
             numberToLetter = NumToLet[num];
             break;
+
         case 2:
             if (num > 19) {
                 theQuotient = Math.floor(num / 10);
@@ -85,6 +81,7 @@ function NumberToLetter(nombre, U=null, D=null) {
                 } else numberToLetter = NumToLet[(theQuotient - 1) * 10] + "-" + NumToLet[10 + rest];
             } else numberToLetter = NumToLet[num];
             break;
+
     }
     if (numberToLetter.substr(numberToLetter.length - "quatre-vingt".length, "quatre-vingt".length) == "quatre-vingt") numberToLetter = numberToLetter + "s";
 
