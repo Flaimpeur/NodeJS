@@ -60,8 +60,9 @@ function NumberToLetter(nombre, U=null, D=null) {
     let x, theQuotient, rest, num;
     let numberToLetter = '';
 
+    // Utilisation de la fonction parseFloat qui permet de transformer une chaîne de caractère en un nombre
     num = parseFloat(nombre.toString().replace(/ /gi, ""));
-    //if (Math.ceil(num) != num) return "Nombre avec virgule non géré.";
+
     if(Math.ceil(num) != num){
         num = nombre.toString().split('.');
         //return NumberToLetter(num[0]) + " virgule " + NumberToLetter(num[1]);
@@ -124,6 +125,21 @@ console.log(upperVowel(aString))
 
 // Exercice 9
 
+numVowel = "bonsoir Tout le monde comment allez vous moi je vais super bien";
+
+function vowelNumber(numVowel) {
+    // Déclaration des variables
+    let vowelNum = 0;
+    let theVowel = ['a', 'e', 'i', 'o', 'u', 'y'];
+    // Boucle for pour compter toute les lettre dans le texte
+    for (let letters of numVowel) {
+        if (theVowel.includes(letters.toLowerCase())) { // Condition pour vérifier si la lettre du texte est compris dans le tableau des voyelles
+            vowelNum ++;
+        }
+    }
+    return vowelNum; // On renvoie le numéro de voyelle comprise dans le texte
+}
+console.log(vowelNumber(numVowel))
 
 // Exercice 10
 
