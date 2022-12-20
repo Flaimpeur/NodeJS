@@ -131,3 +131,37 @@ function largestNumber(arrayNumbers) {
     return Math.max(...arrayNumbers)
 }
 console.log(largestNumber(arrayNumbers))
+
+
+/**
+ * Code prof correction TP1
+ */
+
+// Exercice 5
+
+function digitToLetters(num) {
+    const ones = ['','one','two','three','four','five','six','seven','eight','nine'];
+    const tens = ['','','twenty','thirty','forty','fifty','sixty','seventy','eighty','ninety'];
+    const teens = ['ten','eleven','twelve','thirteen','fourteen','fifteen','sixteen','seventeen','eighteen','nineteen'];
+
+    if (num < 10){
+        return ones[num];
+    } else if (num < 20){
+        return teens[num - 10]
+    }else{
+        return tens[Math.floor(num / 10)] + '-' + ones[num % 10];
+    }
+}
+
+console.log(digitToLetters(70))
+
+// Exercice 8
+let str = 'bonjour ici le test pour les voyelles en majuscule'
+
+function capVowel(str) {
+    
+    return str.replace(/[aeiou]/gi, vowel => vowel.toUpperCase());
+
+}
+
+console.log(capVowel(str))

@@ -19,3 +19,4 @@ déclaration de variable :
 		var : pas utilisable cette semaine
 		let : permet de re assigner la variable (même sans re appeler let)
 		const :  prend moins de mémoire car reste la même variable a chaque fois, donc on peu pas re assigner.
+
