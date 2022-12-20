@@ -5,10 +5,10 @@ const fs = require('fs'); // fs est pour file system se qui est obligatoire pour
 
 const myFile = fs.readFileSync('Fichier1.txt', 'utf8', (err, data)=> {
     if (err) {
-        console.log(err)
+        console.log(err);
         return
     }
-    console.log(data)
+    console.log(data);
 }); // utilisation de readFileSync qui va récupérer le dossier et le mettre dans la console
 
 console.log(myFile);
@@ -33,10 +33,10 @@ console.log(myFile);
 
 const oldtext = fs.readFileSync('Fichier2.txt', 'utf8', (err, data)=> {
     if (err) {
-        console.log(err)
+        console.log(err);
         return
     }
-    console.log(data)
+    console.log(data);
 });
 
 const d = fs.writeFileSync('Fichier2.txt','Bonjour à vous, vous venez de changer mon texte et ça ces cool');
@@ -44,38 +44,38 @@ const d = fs.writeFileSync('Fichier2.txt','Bonjour à vous, vous venez de change
 
 const newtext = fs.readFileSync('Fichier2.txt', 'utf8', (err, data)=> {
     if (err) {
-        console.log(err)
+        console.log(err);
         return
     }
-    console.log(data)
+    console.log(data);
 });
 
 
-console.log("Old text : " + oldtext)
-console.log("New text : " + newtext)
+console.log("Old text : " + oldtext);
+console.log("New text : " + newtext);
 
 // Exercice 4
 
 const readDir = fs.readdirSync('C:/Users/Flaimpeur/Documents/Cours Isitech/RPI/B2/NodeJS/Test/',(anError, anData)=>{
     if (anError) {
-        console.log(anError)
+        console.log(anError);
         return
     }
-    console.log(anData)
+    console.log(anData);
 })
 
-console.log(readDir)
+console.log(readDir);
 
 
 // Exercice 5
 
-fs.openSync('myNewDir', 'a')
+fs.openSync('myNewDir', 'a');
 
 // Exercice 6
 
-const os = require('os')
+const os = require('os');
 
-console.log(os.homedir())
+console.log(os.homedir());
 
 // Exercice 7
 
