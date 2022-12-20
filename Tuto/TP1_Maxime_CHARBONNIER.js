@@ -53,8 +53,7 @@ myNum = 26
 function NumberToLetter(nombre, U=null, D=null) {
 
     // On déclare la variable NumToLet en tant que dictionnaire
-    const NumToLet = {0: "zéro", 1: "un", 2: "deux", 3: "trois", 4: "quatre", 5: "cinq",6: "six",7: "sept",8: "huit",9: "neuf",10: "dix",11: "onze",12: "douze",
-13: "treize", 14: "quatorze", 15: "quinze", 16: "seize", 17: "dix-sept", 18: "dix-huit", 19: "dix-neuf", 20: "vingt", 30: "trente", 40: "quarante", 50: "cinquante", 60: "soixante", 70: "soixante-dix", 80: "quatre-vingt", 90: "quatre-vingt-dix"};
+    const NumToLet = {0: "zéro", 1: "un", 2: "deux", 3: "trois", 4: "quatre", 5: "cinq",6: "six",7: "sept",8: "huit",9: "neuf",10: "dix",11: "onze",12: "douze", 13: "treize", 14: "quatorze", 15: "quinze", 16: "seize", 17: "dix-sept", 18: "dix-huit", 19: "dix-neuf", 20: "vingt", 30: "trente", 40: "quarante", 50: "cinquante", 60: "soixante", 70: "soixante-dix", 80: "quatre-vingt", 90: "quatre-vingt-dix"};
 
     // Déclaration de différente variable
     let x, theQuotient, rest, num;
@@ -64,12 +63,16 @@ function NumberToLetter(nombre, U=null, D=null) {
     num = parseFloat(nombre.toString().replace(/ /gi, ""));
 
     x = num.toString().length;
+
+    // Ici j'utilise l'instruction switch qui va évaluer une expression x et va executer les instructions correspondante au resultat obtenu
     switch (x) {
 
+        // premiere instruction
         case 1:
             numberToLetter = NumToLet[num];
             break;
 
+        // deuxieme instruction
         case 2:
             if (num > 19) {
                 theQuotient = Math.floor(num / 10);
@@ -93,7 +96,23 @@ console.log(NumberToLetter(myNum));
 
 // Exercice 6
 
+// Déclaration des variables
+const objectArray = [{ firstName: " Ezio ", lastName: " Lupo ", age: " 20 " }, { firstName: " Vanessa ", lastName: " Alonzi ", age: " 19 "}, {firstName: "Mic", lastName: "Robot", age: "1"}, {firstName: "Fizz", lastName: "Bilg", age: "10"}]; // Ici déclaration de la variable objectArray qui est un tableau avec 4 Objet
+let objArray = []
 
+function Obj(array, myProp){
+
+    // Boucle for pour récupérer tout les valeurs des propriétés dans chaque objet
+    for (let index = 0; index < array.length; index++) {
+        objArray[index] = array[index][myProp]
+
+    }
+
+    // Renvoie le tableau avec les différente valeur
+    return objArray
+}
+
+console.log(Obj(objectArray, 'firstName'))
 
 // Exercice 7
 
