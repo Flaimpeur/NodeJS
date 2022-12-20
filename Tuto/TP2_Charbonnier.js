@@ -1,6 +1,7 @@
 // Exercice 1
 
 // déclaration de variable 
+const { count } = require('console');
 const fs = require('fs'); // fs est pour file system se qui est obligatoire pour node js (et va être utiliser a chaque fois je n'aurais pas besoin de le reécrire)
 
 const myFile = fs.readFileSync('Fichier1.txt', 'utf8', (err, data)=> {
@@ -78,4 +79,17 @@ const os = require('os');
 console.log(os.homedir());
 
 // Exercice 7
+
+const { exec } = require('child_process');
+
+exec('ipconfig', (err, stdout, stderr) => {
+  if (err) {
+    console.error(`exec error: ${err}`);
+    return;
+  }
+  console.log(stdout)
+
+});
+
+// Exercice 8
 
