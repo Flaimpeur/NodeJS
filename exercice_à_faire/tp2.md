@@ -4,7 +4,7 @@ tp2
 
 2 Écrivez un programme Node.js qui lit un fichier, modifie son contenu et réécrit le contenu modifié dans le fichier.
 
-3 Écrivez un programme Node.js qui utilise le module http pour créer un serveur simple qui sert un fichier statique.
+3 Écrivez un programme Node.js qui utilise le module http pour créer un serveur simple qui sert un fichier statique
 
 4 Écrivez un programme Node.js qui utilise le module fs pour lister les fichiers d'un répertoire.
 
