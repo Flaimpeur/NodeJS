@@ -107,6 +107,7 @@ let urlParams = querystring.parse(url.parse(anUrl).query);
 
 console.log(urlParams);
 
+
 // Exercice 10
 
 // importation de events
