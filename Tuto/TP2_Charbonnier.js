@@ -40,7 +40,7 @@ const oldtext = fs.readFileSync('Fichier2.txt', 'utf8', (err, data)=> {
 });
 
 // On re écrit le text a l'intérieur du fichier grace a la fonction writeFileSync fourni avec le fs
-const d = fs.writeFileSync('Fichier2.txt','Bonjour à vous, vous venez de changer mon texte et ça ces cool');
+const textmodif = fs.writeFileSync('Fichier2.txt','Bonjour à vous, vous venez de changer mon texte et ça ces cool');
 
 // Lecture du fichier après modification 
 const newtext = fs.readFileSync('Fichier2.txt', 'utf8', (err, data)=> {
