@@ -100,7 +100,7 @@ console.log(path.isAbsolute('C:/Users/Flaimpeur/Documents/Cours Isitech/RPI/B2/N
 // importation de querystring, url. Et déclaration de anUrl
 const querystring = require('querystring');
 const url = require('url');
-const anUrl = 'https://test.com/auth/callback?code=hi&state=well';
+const anUrl = 'https://test.fr/auth/callback?code=hi&state=well';
 
 // Analyse de mon url
 let urlParams = querystring.parse(url.parse(anUrl).query);
